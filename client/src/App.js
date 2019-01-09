@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
+import InfoCard from './components/InfoCard';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Filter from './components/Filter';
 
 
-
-export default class App extends Component {
+class App extends Component {
   render() {
-    return ("hello");
+    return (
+      <div>
+        <Navbar /> 
+        <Filter />
+        <InfoCard />
+        <Footer />    
+      </div>    
+    );
   }
 }
+
+export default App;
