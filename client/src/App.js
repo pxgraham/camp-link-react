@@ -4,6 +4,7 @@ import InfoCard from './components/InfoCard';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Filter from './components/Filter';
+import Login from './components/Login';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <Navbar /> 
         <Filter />
         <InfoCard />
+        <div><Login /></div>
         <Footer />    
       </div>    
     );
