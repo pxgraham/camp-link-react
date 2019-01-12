@@ -11,7 +11,7 @@ function LoginForm() {
             <input type="password" placeholder="Enter Password" name="password" required /><br /><br />
             <button type="submit" className="btn">Login</button>
             <p className="new-user">
-                <a href="../signup/signup.html">New user? Click here to sign up.</a>
+                <a href="/signup">New user? Click here to sign up.</a>
             </p>
         </form>
     );
