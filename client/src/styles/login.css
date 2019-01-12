@@ -1,18 +1,11 @@
 body, html {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .bgImg {
+
     /* The image used */
     background-image: url("../styles/images/campsite1.png");
-  
     min-height: 100%;
-  
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -20,8 +13,16 @@ body, html {
     position: relative;
   }
   
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+
+  }
+  
   /* Add styles to the form container */
-  .container {
+  .login-form {
     position: absolute;
     right: 0;
     margin: 20px;
