@@ -5,7 +5,7 @@ import '../styles/login.css';
 class LoginForm extends Component {
     state = {
         username: "",
-        hash: "",
+        password: "",
     }
     handleInputChange = event => {
         const { name, value } = event.target;
@@ -20,8 +20,8 @@ class LoginForm extends Component {
             method: 'post',
             url: 'http://localhost:3001/users/authenticate',
             data: JSON.stringify({
-                "username": "username", 
-                "hash": "password", 
+                "username": this.state.username, 
+                "password": this.state.password, 
             }),
             headers: {
                 'Content-Type': 'application/json'
@@ -36,6 +36,7 @@ class LoginForm extends Component {
             })
             .catch(function (response) {
                 //handle error
+                alert(`Login Failed, Please Try Again.`);
                 console.log(response);
             });
     }
@@ -46,7 +47,7 @@ class LoginForm extends Component {
                 <label htmlFor="email"><b>Email/User</b></label>
                 <input type="text" placeholder="Enter Email/User" onChange={this.handleInputChange} name="username" required />
                 <label htmlFor="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" onChange={this.handleInputChange} name="hash" required /><br /><br />
+                <input type="password" placeholder="Enter Password" onChange={this.handleInputChange} name="password" required /><br /><br />
                 <button type="submit" className="btn" onClick={this.formPost}>Login</button>
                 <p className="new-user">
                     <a href="/signup">New user? Click here to sign up.</a>
