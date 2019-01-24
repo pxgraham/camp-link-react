@@ -30,9 +30,9 @@ class LoginForm extends Component {
             //config: { headers: {'Content-Type': 'multipart/form-data' }}
             })
             .then(function (response) {
-                //handle success
-                alert(`Congrats you are now logged in!`)
-                console.log(response);
+                //handle success                
+                localStorage.setItem('token', response.data.token);
+                window.location.replace("/directory")                            
             })
             .catch(function (response) {
                 //handle error
