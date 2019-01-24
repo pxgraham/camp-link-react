@@ -4,7 +4,10 @@ import Navbar from "../components/Navbar"
 class Home extends Component {
   render() {
     return (
-      <Navbar />
+      <div>
+          <Navbar />
+          <h1>Camplink</h1>
+      </div>
     );
   }
 }

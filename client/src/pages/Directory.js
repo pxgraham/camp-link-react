@@ -1,58 +1,63 @@
 import React, { Component } from "react";
-import {Card, CardTitle} from 'react-materialize';
+import { Row, Card, CardTitle } from 'react-materialize';
 import axios from 'axios';
+import InfoCard from '../components/InfoCard';
+import Navbar from '../components/Navbar';
 
+let token = localStorage.getItem('token');
 const cardStyle = {
     width: '350px',
     height: '100px',
     padding: '2rem',
+    margin: '20px',
 }
 const subText = {
     fontSize: '16px',
 }
-let token = localStorage.getItem('token');
-let userData = {};
+class Directory extends Component {
+    state = {
 
-class InfoCard extends Component {
-  componentDidMount(){
-    axios({
-      method: 'get',
-      url: 'http://localhost:3001/users',
-      headers: {
-          'Authorization': 'Bearer ' + token
-      },
-      json: true
-      })
-      .then(function (response) {
-          userData = response.data;
-          //response.data contains an array of objects of user data
-          console.log(userData);
-      })  
-      .catch(function (response) {
-          console.log(`it failed with error: ${response}`);
-      })
-  }
-  render() {
+    }
+    componentDidMount() {
+        axios({
+            method: 'get',
+            url: 'http://localhost:3001/users',
+            headers: {
+                'Authorization': 'Bearer ' + token
+            },
+            json: true
+        })
+            .then(response => {
+                const userData = response.data;
+                this.setState({
+                    userData
+                });
+                //response.data contains an array of objects of user data
+            })
+            .catch(response => {
+                //   window.location.replace("/login")  
+                console.log(`it failed with error: ${response}`);
+            })
+    }
 
-    return (
-      <div>        
-                  <table>
-                      <tr>
-                          {/* <td>
-                              <div style={cardStyle}>
-                                  <Card header={<CardTitle reveal image={"images/people.png"} waves='light'/>}
-                                      title="Peyton Graham"
-                                      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>                
-                                      <span style={subText}>July 2018</span>
-                                      <span style={subText}> | React</span>
-                                      <p><a href="#">View Profile</a></p>
-                                  </Card>                         
-                              </div>
-                          </td> */}
-                      </tr>
-                  </table>                                  
-      </div>
-    );
-  }
+    render() {
+        let users = this.state.userData;
+        users ? users = users.map((item) => {
+            return (
+                <div>
+                    <InfoCard firstName={item.firstName} lastName={item.lastName} />
+                </div>
+            )
+        }) : (console.log('nope'));
+
+        return (
+            <div>
+                <Navbar />
+                <Row>
+                        {users}
+                </Row>
+            </div>
+        );
+    }
 }
-export default InfoCard;
+export default Directory;

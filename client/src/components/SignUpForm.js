@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import '../styles/login.css';
+// import '../styles/login.css';
+import Navbar from '../components/Navbar';
 
 class SignUpForm extends Component {
 
@@ -38,6 +39,7 @@ class SignUpForm extends Component {
             .then(function (response) {
                 //handle success
                 alert(`Congrats you have signed up!`)
+                window.location.replace("/login")
                 console.log(response);
             })
             .catch(function (response) {
@@ -48,7 +50,7 @@ class SignUpForm extends Component {
 
     render() {
         return (
-            <div>
+            <div>               
                 <form className="container">
                     <h1>Sign Up:</h1>
     
