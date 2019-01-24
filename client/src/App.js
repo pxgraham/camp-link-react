@@ -5,12 +5,13 @@ import Login from './pages/Login';
 import Directory from './pages/Directory';
 import SignUp from './pages/SignUp';
 import Unknown from './pages/404';
+import Navbar from './components/Navbar';
 
 class App extends Component {
   render() {
-    return (
-      <Router>
-          <Switch>
+    return (      
+      <Router>          
+          <Switch>          
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={SignUp} />
