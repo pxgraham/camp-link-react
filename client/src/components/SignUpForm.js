@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 // import '../styles/login.css';
-import Navbar from '../components/Navbar';
 
 class SignUpForm extends Component {
 
     state = {
-        username: "",
+        email: "",
         password: "",
         firstName: "",
         lastName: ""
@@ -26,7 +25,7 @@ class SignUpForm extends Component {
                 method: 'post',
                 url: 'http://localhost:3001/users/register',
                 data: JSON.stringify({
-                    "username": this.state.username, 
+                    "email": this.state.email, 
                     "password": this.state.password, 
                     "firstName": this.state.firstName, 
                     "lastName": this.state.lastName
@@ -60,8 +59,8 @@ class SignUpForm extends Component {
                     <label for="last-name"><b>Last Name</b></label>
                     <input type="text" placeholder="Enter Last Name" onChange={this.handleInputChange} name="lastName" required />
                 
-                    <label for="email"><b>Email/User</b></label>
-                    <input type="text" placeholder="Enter Email/User" onChange={this.handleInputChange} name="username" required />
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email/User" onChange={this.handleInputChange} name="email" required />
                 
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" onChange={this.handleInputChange} name="password" required /><br /><br />

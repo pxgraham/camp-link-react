@@ -30,7 +30,8 @@ class LoginForm extends Component {
             //config: { headers: {'Content-Type': 'multipart/form-data' }}
             })
             .then(function (response) {
-                //handle success                
+                //handle success
+                                
                 localStorage.setItem('token', response.data.token);
                 window.location.replace("/directory")                            
             })
