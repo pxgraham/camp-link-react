@@ -3,19 +3,10 @@ import { Row, Card, CardTitle } from 'react-materialize';
 import axios from 'axios';
 import InfoCard from '../components/InfoCard';
 import Navbar from '../components/Navbar';
-import "../styles/directory.css"
+/* import "../styles/directory.css"
 import "../styles/directorygrid.css"
-
+ */
 let token = localStorage.getItem('token');
-const cardStyle = {
-    width: '350px',
-    height: '100px',
-    padding: '2rem',
-    margin: '20px',
-}
-const subText = {
-    fontSize: '16px',
-}
 class Directory extends Component {
     state = {
 

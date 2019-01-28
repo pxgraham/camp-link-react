@@ -1,0 +1,454 @@
+/* login */
+html, body {
+    height: 100%;
+  }
+    
+  body { 
+    background-image: url("./images/navybg.jpg") ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    max-height: 100%;
+  }
+    
+  div, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+    
+  .wrapper {
+    height: 100%; 
+    width: 100%; 
+  }
+    
+  .message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 250px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 350px; 
+    height: 375px;
+    min-width: 350px;
+    display: block;
+    background-color: rgba(0, 0, 27, 0.719);
+    color: goldenrod;
+    padding: 0.5em;
+    text-align: center;
+    align-content: center;
+    border: 2px white solid;
+  }
+  
+  .full-form {
+    border: 1px goldenrod solid;
+    align-content: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+  }
+  
+  label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 30%;
+    text-align: right;
+    color: goldenrod;
+  }
+  
+  input {
+    display: inline-block;
+    margin: auto;
+    background-color: rgba(0,0,0,0.6);
+    width: 60%;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  input[type=text], input[type=password] {
+    border: none;
+    border-bottom: 1px solid goldenrod;
+  }
+  
+  p {
+    vertical-align: bottom;
+  }
+  
+  /* unvisited link */
+  a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: grey;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: goldenrod;
+  }
+  
+  /* selected link */
+  a:active {
+    color: yellow;
+  }
+  
+  .button {
+    background-color: goldenrod;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .button:hover {opacity: 1}
+  
+  .logo {
+    content: url("./images/camplink_logo.png");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 390px;
+    padding-top: 10px;
+    width: 300px;
+  }
+
+/* directory */
+.logo {
+    content: url("./images/camplink_logo.png");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 390px;
+    padding-top: 10px;
+  }
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .flex-container > .card-holder {
+    background-color: #f1f1f1;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+
+
+  .container {
+    width: 250px;
+    min-width: 250px;
+    background: silver;
+    align-content: center;
+    margin: auto;
+    height: 300px;
+    padding-top: 20px;
+    border: 2px solid navy;
+}
+
+h1 {
+    text-align: center;
+    color: goldenrod;
+}
+
+.profile-picture-holder {
+    width: 175px;
+    height: 175px;
+    background: whitesmoke;
+    border: 2px solid rgb(5, 1, 44);
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.profile-info-holder {
+    color: navy;
+    text-align: center;
+
+}
+
+.name-holder {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.card-picture {
+    object-fit: cover;
+    width: 175px;
+    height: 175px;
+    
+}
+
+/* profile */
+
+.some-page-wrapper {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+.profile-wrapper {
+    max-width: 800px;
+    max-height: 200px;
+    width: 800px;
+    height: 200px;
+    align-items: center;
+    background: grey;
+    margin: auto;
+}
+  
+.data-holder1, .data-holder2, .data-holder3 {
+    min-width: 375px;
+    height: 400px;
+    padding-top: 0px;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    }
+
+
+
+
+
+.contact-holder-header{
+    color: goldenrod;
+    text-align: right;
+    vertical-align: top;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid goldenrod;
+    }
+
+.coding-holder-header{
+    color: goldenrod;
+    text-align: right;
+    vertical-align: top;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid goldenrod;
+    }
+
+.employment-holder-header {
+    color: goldenrod;
+    text-align: right;
+    vertical-align: top;
+    font-size: 42px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid goldenrod;
+    }
+
+.attribute {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    }
+
+
+/* profile card */
+.portfolio-container {
+    width: 600px;
+    min-width: 380px;
+    max-width: 100%;
+    align-content: center;
+    margin: auto;
+    height: 350px;
+    max-height: 80%;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 20px;
+    border-bottom: 5px solid goldenrod;
+
+}
+
+.profile-picture-holder {
+    width: 250px;
+    height: 250px;
+    background: whitesmoke;
+    border: 5px solid goldenrod;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.profile-info-holder {
+    color: goldenrod;
+    text-align: center;
+
+}
+
+.name-holder {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cohort-holder, .email-holder {
+    font-size: 20px;
+}
+
+.profile-img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(5, 1, 44);
+  }
+  
+  .topnav a {
+    float: left;
+    display: inline-block;
+    color: goldenrod;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+  
+  }
+  
+  .active {
+    background-color: rgb(5, 1, 44);
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: goldenrod;
+    color: rgb(5, 1, 44);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+  .container {
+    width: 600px;
+    min-width: 380px;
+    max-width: 100%;
+    align-content: center;
+    margin: auto;
+    height: 350px;
+    max-height: 80%;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 20px;
+    border-bottom: 5px solid goldenrod;
+}
+img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    
+}

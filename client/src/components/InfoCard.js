@@ -1,7 +1,6 @@
 import React from "react";
-import { Row, Col, Card, CardTitle } from 'react-materialize';
-import "../styles/directory-card.css"
-
+/* import "../styles/directory-card.css"
+ */
 const cardStyle = {
     width: '350px',
     height: '100px',
