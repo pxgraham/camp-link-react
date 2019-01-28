@@ -35,7 +35,7 @@ class Directory extends Component {
                 //response.data contains an array of objects of user data
             })
             .catch(response => {
-                //   window.location.replace("/login")  
+                window.location.replace("/login")  
                 console.log(`it failed with error: ${response}`);
             })
     }

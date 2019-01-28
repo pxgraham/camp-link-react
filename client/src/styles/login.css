@@ -1,86 +1,124 @@
-body, html {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html, body {
+  height: 100%;
+}
+  
+body { 
+  background-image: url("./images/navybg.jpg") ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+  max-height: 100%;
+}
+  
+div, body{
+  margin: 0;
+  padding: 0;
+  font-family: exo, sans-serif;
+}
+  
+.wrapper {
+  height: 100%; 
+  width: 100%; 
+}
+  
+.message {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 250px;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 350px; 
+  height: 375px;
+  min-width: 350px;
+  display: block;
+  background-color: rgba(0, 0, 27, 0.719);
+  color: goldenrod;
+  padding: 0.5em;
+  text-align: center;
+  align-content: center;
+  border: 2px white solid;
+}
 
-    /* The image used */
-    background-image: url("../styles/images/campsite1.png");
-    min-height: 100%;
+.full-form {
+  border: 1px goldenrod solid;
+  align-content: center;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  height: 100%;
+}
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .bg-img {
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 30%;
+  text-align: right;
+  color: goldenrod;
+}
 
-  }
-  
-  /* Add styles to the form container */
-  .login-form {
-    position: absolute;
-    right: 0;
-    margin: 20px;
-    max-width: 300px;
-    padding: 16px;
-    height: 360px;
-    
-    vertical-align: middle;
-    background-color: whitesmoke;
-    opacity: .75;
-    border-radius: 25px;
-  }
+input {
+  display: inline-block;
+  margin: auto;
+  background-color: rgba(0,0,0,0.6);
+  width: 60%;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
 
-  h1 {
-    text-align: center;
-    margin-top: 5px;
-    color: navy;
-    font-weight: bold;
-    font-size: 40px;
-  }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Set a style for the submit button */
-  .btn {
-    background-color:navy;
-    color: white;
-    padding: 20px 1px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    text-align: center;
-    line-height: 1px;
-  }
-  
-  .btn:hover {
-    opacity: 1;
-    background-color: rgb(228, 209, 39);
-  }
+input[type=text], input[type=password] {
+  border: none;
+  border-bottom: 1px solid goldenrod;
+}
 
-  .new-user {
-    text-align: center;
-    color: navy;
-  }
+p {
+  vertical-align: bottom;
+}
 
-  a {
-    color: navy;
-  }
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+a:hover {
+  color: goldenrod;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+.button {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button:hover {opacity: 1}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 390px;
+  padding-top: 10px;
+  width: 300px;
+}

@@ -1,0 +1,115 @@
+body { 
+    background-image: url("navybg.jpg") ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    color: goldenrod;
+  }
+
+.some-page-wrapper {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+.profile-wrapper {
+    max-width: 800px;
+    max-height: 200px;
+    width: 800px;
+    height: 200px;
+    align-items: center;
+    background: grey;
+    margin: auto;
+}
+  
+.data-holder1, .data-holder2, .data-holder3 {
+    min-width: 375px;
+    height: 400px;
+    padding-top: 0px;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    }
+
+
+
+
+
+.contact-holder-header{
+    color: goldenrod;
+    text-align: right;
+    vertical-align: top;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid goldenrod;
+    }
+
+.coding-holder-header{
+    color: goldenrod;
+    text-align: right;
+    vertical-align: top;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid goldenrod;
+    }
+
+.employment-holder-header {
+    color: goldenrod;
+    text-align: right;
+    vertical-align: top;
+    font-size: 42px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid goldenrod;
+    }
+
+.attribute {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    }
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #111;
+  }
