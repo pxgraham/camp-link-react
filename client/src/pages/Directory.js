@@ -3,6 +3,8 @@ import { Row, Card, CardTitle } from 'react-materialize';
 import axios from 'axios';
 import InfoCard from '../components/InfoCard';
 import Navbar from '../components/Navbar';
+import "../styles/directory.css"
+import "../styles/directorygrid.css"
 
 let token = localStorage.getItem('token');
 const cardStyle = {
@@ -45,7 +47,7 @@ class Directory extends Component {
         users ? users = users.map((item) => {
             return (
                 <div>
-                    <InfoCard firstName={item.firstName} lastName={item.lastName} />
+                    <InfoCard firstName={item.firstName} lastName={item.lastName} year={item.year} email={item.email} id={item._id} />
                 </div>
             )
         }) : (console.log('nope'));

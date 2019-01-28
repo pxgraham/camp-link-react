@@ -6,7 +6,7 @@ import Directory from './pages/Directory';
 import SignUp from './pages/SignUp';
 import Profile from './pages/Profile';
 import UpdateProfile from './pages/UpdateProfile';
-import Unknown from './pages/404';
+//import Unknown from './pages/404';
 
 class App extends Component {
   render() {
@@ -17,9 +17,8 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/directory" component={Directory} />
-            <Route exact path="/profile/:id" component={Profile} />
-            <Route exact path="/profile/update" component={UpdateProfile} />
-            <Route component={Unknown} />
+            <Route exact path="/profile:/id" component={Profile} />
+            <Route exact path="/profile/update/:id" component={UpdateProfile} />
           </Switch>
       </Router>       
     );

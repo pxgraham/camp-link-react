@@ -47,7 +47,7 @@ class LoginForm extends Component {
             <form className="login-form">
                 <h1>Log In:</h1>
                 <label htmlFor="email"><b>Email/User</b></label>
-                <input type="text" placeholder="Enter Email/User" onChange={this.handleInputChange} name="email" required />
+                <input type="text" placeholder="Enter Email" onChange={this.handleInputChange} name="email" required />
                 <label htmlFor="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" onChange={this.handleInputChange} name="password" required /><br /><br />
                 <button type="submit" className="btn" onClick={this.formPost}>Login</button>
