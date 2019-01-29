@@ -33,15 +33,15 @@ class SignUpForm extends Component {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                json: true            
+                //json: true            
             })
-            .then(function (response) {
+            .then(response => {
                 //handle success
                 alert(`Congrats you have signed up!`)
                 window.location.replace("/login")
                 console.log(response);
             })
-            .catch(function (response) {
+            .catch(response => {
                 //handle error
                 console.log(response);
             });

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import Contact from '../components/Contact';
+import ProfileHeader from '../components/ProfileHeader';
 import axios from 'axios';
+
 
 let token = localStorage.getItem('token');
 class Profile extends Component {
