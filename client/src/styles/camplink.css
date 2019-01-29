@@ -43,6 +43,25 @@ html, body {
     align-content: center;
     border: 2px white solid;
   }
+  .message1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 300px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 350px; 
+    height: 75%;
+    min-width: 350px;
+    display: block;
+    background-color: rgba(0, 0, 27, 0.719);
+    color: goldenrod;
+    padding: 0.5em;
+    text-align: center;
+    align-content: center;
+    border: 2px white solid;
+  }
   
   .full-form {
     border: 1px goldenrod solid;

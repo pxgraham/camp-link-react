@@ -1,0 +1,125 @@
+.bang {
+    all: none;
+}
+body {    
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    max-height: 100%;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+    
+  div, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding-top: 10px;
+  }
+    
+  .wrapper {
+    height: 100%; 
+    width: 100%; 
+  }
+    
+  .message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 400px; 
+    height: 725px;
+    min-width: 350px;
+    display: block;
+    color: goldenrod;
+    padding: 0.5em;
+    text-align: center;
+    align-content: center;
+    border: 2px goldenrod;
+  }
+  
+  .full-form {
+    border: 1px goldenrod solid;
+    align-content: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    color: goldenrod;
+  }
+  
+  label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 30%;
+    text-align: right;
+    color: goldenrod;
+  }
+  
+  input {
+    display: inline-block;
+    margin: auto;
+    background-color: white;
+    width: 60%;
+    color: rgb(5, 1, 44);
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+  }
+  
+  input[type=text], input[type=psw], input[type=email], input[type=url] {
+    border: none;
+    border-bottom: 1px solid goldenrod;
+  }
+  
+  p {
+    vertical-align: text-bottom;
+  }
+  
+  /* unvisited link */
+  a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: grey;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: goldenrod;
+  }
+  
+  /* selected link */
+  a:active {
+    color: yellow;
+  }
+  
+  .button {
+    background-color: goldenrod;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .button:hover {opacity: 1}
