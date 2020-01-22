@@ -19,7 +19,7 @@ app.use(jwt());
 
 // api routes
 
-app.use('/users', require('./users/controller'));
+app.use('/api/users', require('./users/controller'));
 
 // global error handler
 app.use(errorHandler);

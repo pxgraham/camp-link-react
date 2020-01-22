@@ -23,7 +23,7 @@ class SignUpForm extends Component {
         event.preventDefault();
         axios({
                 method: 'post',
-                url: '/users/register',
+                url: '/api/users/register',
                 data: JSON.stringify({
                     "email": this.state.email, 
                     "password": this.state.password, 
