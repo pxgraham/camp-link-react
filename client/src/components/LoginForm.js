@@ -19,7 +19,7 @@ class LoginForm extends Component {
         event.preventDefault();
         axios({
             method: 'post',
-            url: 'http://localhost:3001/users/authenticate',
+            url: '/users/authenticate',
             data: JSON.stringify({
                 "email": this.state.email,
                 "password": this.state.password,

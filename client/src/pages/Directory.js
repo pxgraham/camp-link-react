@@ -14,7 +14,7 @@ class Directory extends Component {
     componentDidMount() {
         axios({
             method: 'get',
-            url: 'http://localhost:3001/users',
+            url: '/users',
             headers: {
                 'Authorization': 'Bearer ' + token
             },

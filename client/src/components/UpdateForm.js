@@ -36,7 +36,7 @@ class UpdateForm extends Component {
         token ?
             axios({
                 method: 'post',
-                url: 'http://localhost:3001/users/update',
+                url: '/users/update',
                 headers: {
                     'Authorization': 'Bearer ' + token,
                     'Content-Type': 'application/json'
