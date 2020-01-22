@@ -11,7 +11,13 @@ app.use(bodyParser.json());
 app.use(cors());
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
+    // Exprees will serve up production assets
+    app.use(express.static(path.join(__dirname, 'build')));
+
+    // Express serve up index.html file if it doesn't recognize route
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    });
 }
 
 // use JWT auth to secure the api
